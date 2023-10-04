@@ -15,7 +15,9 @@ const Home = () => {
         </p>
         <div className="button-group">
           {user ? (
-            <button onClick={() => navigate('/dashboard')}>Dashboard</button>
+            <button className="sign-in" onClick={() => navigate('/dashboard')}>
+              Dashboard
+            </button>
           ) : (
             <div>
               <button onClick={() => navigate('/login')} className="sign-in">

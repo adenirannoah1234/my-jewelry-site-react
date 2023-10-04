@@ -36,7 +36,7 @@ const Services = () => {
       }, 5000);
     } else {
       localStorage.setItem('user', JSON.stringify(userName));
-      window.location.href = '/dashboard';
+      navigate('/dashboard');
     }
   }
 
