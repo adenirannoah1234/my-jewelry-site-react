@@ -27,10 +27,16 @@ const Navbar = () => {
         </li>
         {user ? (
           <p className="iconl" style={{ fontSize: '20px' }}>
-            <i
-              onClick={() => setUserDropDown(!userDropDown)}
-              class="ri-user-3-line"
-            ></i>
+            <p className="icon-drop">
+              <i
+                onClick={() => setUserDropDown(!userDropDown)}
+                class="ri-user-3-line"
+              ></i>
+              <i
+                onClick={() => setUserDropDown(!userDropDown)}
+                class="ri-arrow-drop-down-line"
+              ></i>
+            </p>
             {userDropDown && (
               <p
                 onClick={() => {

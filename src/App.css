@@ -28,7 +28,7 @@
 
 .list{
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -120,9 +120,20 @@
   border-radius: 5px;
   position: absolute;
   z-index: 1;
+  right: 0;
   
   
 }
+
+.icon-drop{
+  display: flex;
+  gap: 3px;
+  border: 1px solid white;
+  padding: 2px;
+  border-radius: 5px;
+  
+}
+
 
 .logout a{
   text-decoration: none;
@@ -385,14 +396,14 @@ footer{
   }
 
   .nav{
-    padding: 10px;
+    padding: 15px;
   }
 
 
 }
 @media screen and (max-width: 375px){
   .nav{
-    padding: 8px;
+    padding: 12px;
   }
 
   .question2{
