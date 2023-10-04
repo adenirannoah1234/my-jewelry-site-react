@@ -15,7 +15,10 @@ const Home = () => {
         </p>
         <div className="button-group">
           {user ? (
-            <button className="sign-in" onClick={() => navigate('/dashboard')}>
+            <button
+              className="dashboardbtn"
+              onClick={() => navigate('/dashboard')}
+            >
               Dashboard
             </button>
           ) : (
