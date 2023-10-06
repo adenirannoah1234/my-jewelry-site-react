@@ -5,6 +5,8 @@ import Register from './pages/register/Register';
 import Sign from './pages/sign-in/Sign-in';
 import Dashboards from './pages/dashboards/Dashboards';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {

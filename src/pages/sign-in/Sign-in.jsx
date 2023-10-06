@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Images from '../../assets/images/diamond logo.png';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -7,6 +7,7 @@ const Signin = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
+  const user = JSON.parse(localStorage.getItem('user'));
 
   function handleUserLogin(e) {
     e.preventDefault();
