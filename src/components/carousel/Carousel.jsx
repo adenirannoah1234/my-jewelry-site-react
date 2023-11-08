@@ -1,33 +1,76 @@
-import Carousel from 'react-bootstrap/Carousel';
+import React from 'react';
+import $ from 'jquery';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import carousel from '../../assets/images/ringcaroul.png';
 
-function Gallery() {
+const Carousel = () => {
+  const options = {
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    nav: true,
+    responsiveClass: true,
+    navText: true,
+    navText: ['Prev', 'Next'],
+    smartSpeed: 1000,
+    loop: true,
+    // dots: false,
+    margin: 0,
+    responsive: {
+      1100: {
+        items: 3,
+      },
+      724: {
+        items: 2,
+      },
+      500: {
+        items: 1,
+      },
+      370: {
+        items: 1,
+        innerWidth: '100%',
+        outerWidth: '100%',
+      },
+    },
+  };
   return (
-    <Carousel>
-      <Carousel.Item interval={1000}>
-        <ExampleCarouselImage text="First slide" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={500}>
-        <ExampleCarouselImage text="Second slide" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <ExampleCarouselImage text="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <div>
+      <OwlCarousel className="owl-theme" {...options}>
+        <div class="item">
+          <h4 style={{ width: '40 %' }}>
+            <img className="ring" src={carousel} alt="" />
+          </h4>
+        </div>
+        <div class="item">
+          <h4 style={{ width: '40 %' }}>
+            <img className="ring" src={carousel} alt="" />
+          </h4>
+        </div>
+        <div class="item">
+          <h4 style={{ width: '40 %' }}>
+            <img className="ring" src={carousel} alt="" />
+          </h4>
+        </div>
+        <div class="item">
+          <h4 style={{ width: '40 %' }}>
+            <img className="ring" src={carousel} alt="" />
+          </h4>
+        </div>
+        <div class="item">
+          <h4 style={{ width: '40 %' }}>
+            <img className="ring" src={carousel} alt="" />
+          </h4>
+        </div>
+        <div class="item">
+          <h4 style={{ width: '40 %' }}>
+            <img className="ring" src={carousel} alt="" />
+          </h4>
+        </div>
+      </OwlCarousel>
+    </div>
   );
-}
+};
 
-export default Gallery;
+export default Carousel;

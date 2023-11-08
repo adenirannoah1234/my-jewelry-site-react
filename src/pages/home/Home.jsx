@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Images from '../../assets/images/background image.png';
 import { useNavigate } from 'react-router-dom';
+import Carousel from '../../components/carousel/Carousel';
 // import Gallery from '../../components/carousel/Carousel';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -47,6 +48,11 @@ const Home = () => {
         </div>
         <img src={Images} alt="" />
       </div>
+      <div>
+        <h1>Gallery</h1>
+        <Carousel />
+      </div>
+      {/* <Carousel /> */}
     </>
   );
 };

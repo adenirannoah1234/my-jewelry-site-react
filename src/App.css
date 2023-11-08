@@ -95,6 +95,10 @@
   gap: 30px; 
 }
 
+.ring{
+  width: 40%;
+}
+
 .sign-in{
   all: unset;
   padding: 10px 20px;
